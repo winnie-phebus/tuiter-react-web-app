@@ -1,0 +1,60 @@
+<!--- Like most screens, add a Back link to navigate back to the previous screen, navigation.html in this case. -->
+<a href="navigation.html">Back</a>
+
+<!-- Below the link add an h1 Tuiter header and an h2 Home header below that.-->
+<h1> Tuiter </h1>
+<h2> Home </h2>
+
+<!-- Below the headers add a 48 by 48 pixel image representing the owner of the account. Use an image of your choice.-->
+<img width="48" height="48" src=".."/> <!-- TODO: add an img here-->
+</br>
+<!-- Add a textarea element for users to post new tuits. The textarea should have a placeholder that says "What's happening?".
+     Add a dropdown with options "Everyone can reply", "People you follow", and "Only people you mention", 
+     with values "EVERYONE", "FOLLOWING", and "MENTIONED" respectively. Default value should be "EVERYONE".-->
+<textarea> What's happening? </textarea>
+
+ <select>
+    <option value="EVERYONE">Everyone can reply</option>
+    <option value="FOLLOWING">People you follow</option>
+    <option value="MENTIONED">Only people you mention</option>
+ </select>
+
+</br>
+<!-- Add a button to upload an image and another button labeled "Tuit" to create a new tuit. -->
+<input type="image"/>
+<button>Tuit</button>
+<!-- Use an unordered list ul to create a couple of tuits as line item elements li shown here on the right as bullet points.-->
+<ul>
+<!-- As the header of the tuit, add a hyperlink referencing topic.html labeled Topic 123. -->
+<li>
+    <h3>
+        <a href="topic.html">Topic 123</a> </br>
+        <!-- Add a 48 by 48 pixel image, a link referencing profile.html labeled Alice, add a handle @alice, and a time stamp of 2 hours as shown. -->
+        <img width="48" height="48" src="logo192.png"/>
+        <a href="profile.html" name="profile-pic">Alice</a> <!-- TODO: investigate why this is all bold?-->
+        <label for="profile-pic"> @alice - 2h </label>
+    </h3>
+    <!-- Below the tuit's header add a paragraph with dummy content as shown. -->
+    <p>
+        Donec finibus luctus rhoncus. Maecenas scelerisque ante vitae nunc euismod pharetra. 
+        Aliquam erat volutpat. Nam auctor dolor a fringilla suscipit. Nullam a malesuada eros. 
+        Proin consequat commodo odio. In varius ligula turpis.
+         Maecenas aliquam est a nunc congue, eget maximus quam feugiat. 
+         Aliquam non scelerisque ante. Ut fringilla, diam a tristique sodales, neque justo consectetur lectus, 
+         ut malesuada augue nibh ac justo. Morbi hendrerit leo ac feugiat convallis. Nunc sagittis tristique congue. 
+         Integer vitae porttitor sapien. Fusce luctus lectus vitae mi lacinia dignissim.
+    </p>
+    <!-- Below the tuit, add Reply, Retuit, Like, and Share links linked to reply.html, retuit.html, like.html, and share.html respectively. 
+    Include count values 123, 234, and 345 as shown. Instead of Alice and @alice, use your first name.-->
+    <a href="reply.html" name="reply-count">Reply</a>
+    <label for="reply-count">123</label>
+    <a href="retuit.html" name="retuit-count">Retuit</a>
+    <label for="reply-count">234</label>
+    <a href="like.html" name="like-count">Like</a>
+    <label for="reply-count">345</label>
+    <a href="share.html">Share</a>
+</li>
+<!-- Repeat to create a second tuit with slightly different content-->
+<!-- TODO: ^, after formatting is A+ :)-->
+</ul>
+<!-- -->
