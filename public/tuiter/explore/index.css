@@ -1,0 +1,125 @@
+body {
+  background-color: black;
+}
+
+.wd-container {
+  margin: 0px 16px;
+  width: 98%;
+  border: 1px solid rgb(47, 51, 54);
+  padding: 5px;
+  /* align-items: flex-start; */
+}
+
+.wd-center-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wd-spread-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.wd-border {
+  /* border-color: rgb(47, 51, 54); */
+  border: 2px dashed rgb(47, 51, 54);
+}
+
+.wd-explore-search {
+  /* border: 3px;
+  padding: 5px; */
+}
+
+.wd-explore-searchbar {
+  color: white;
+  background-color: darkslategray;
+  margin-right: 12px;
+  border-radius: 45px;
+  border-color: transparent;
+  width: 85%;
+  padding: 10px;
+}
+
+.wd-gear {
+  /* content: "\2699"; */
+  /* border: none; */
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.wd-explore-container {
+  /* display: flex; */
+  /* padding: 15px; */
+  padding-bottom: 0px;
+  border-bottom: 4px solid rgb(110, 118, 125);
+}
+
+.wd-explore-container > .wd-explore-navitem {
+  flex-basis: 100%;
+}
+
+.wd-explore-navitem {
+  color: rgb(110, 118, 125);
+  text-align: center;
+  padding: 16px;
+  font-size: 15px;
+  /* border-color: aqua; */
+}
+
+/* TUIT VIEWS */
+.wd-container > .wd-explore-tuit {
+  color: rgb(110, 118, 125);
+  padding-inline: 10px;
+  margin-block: 0.5%;
+  padding-block: 10px;
+  /* text-align: left; */
+  /* display: flex; */
+  /* align-items: baseline; */
+  /* align-content: flex-start; */
+  /* justify-content: normal; */
+}
+
+.wd-explore-tuit p {
+  padding: 0px;
+  margin: 0px;
+  height: 100px;
+}
+.wd-explore-tuit img {
+  height: 100px;
+  width: 100px;
+  margin-right: 16px;
+  border-radius: 20px;
+}
+
+.wd-tuit-topic {
+  font-size: 13px;
+  /* margin: 5px 0px; */
+}
+
+.wd-tuit-author {
+  color: white;
+  font-weight: bold;
+}
+
+.wd-tuit-title {
+  font-weight: bolder;
+  display: block;
+  color: white;
+  margin: 10px 0px;
+}
+
+.wd-tuit-count {
+  font-size: 12px;
+  display: block;
+  margin: 5px 0px;
+}
+/* CONTRASTS */
+.wd-contrast-underline {
+  border-bottom: 4px solid rgb(29, 161, 242);
+}
+
+.wd-contrast-color {
+  color: rgb(29, 161, 242);
+}
