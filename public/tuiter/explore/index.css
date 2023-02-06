@@ -1,30 +1,6 @@
-body {
-  background-color: black;
-}
-
-.wd-container {
-  margin: 0px 16px;
-  width: 98%;
-  border: 1px solid rgb(47, 51, 54);
-  padding: 5px;
-  /* align-items: flex-start; */
-}
-
-.wd-center-items {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.wd-spread-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
 .wd-border {
-  /* border-color: rgb(47, 51, 54); */
-  border: 2px dashed rgb(47, 51, 54);
+  border-color: rgb(47, 51, 54);
+  /* border: 2px dashed rgb(47, 51, 54); */
 }
 
 .wd-explore-search {
@@ -96,11 +72,6 @@ body {
 .wd-tuit-topic {
   font-size: 13px;
   /* margin: 5px 0px; */
-}
-
-.wd-tuit-author {
-  color: white;
-  font-weight: bold;
 }
 
 .wd-tuit-title {
