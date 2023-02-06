@@ -65,22 +65,3 @@ body {
   color: white;
   margin: 12px 2px;
 }
-
-.wd-tuit-stats {
-  font-size: 15px;
-}
-
-.wd-icon {
-  color: rgb(47, 51, 54);
-  border: 1px dashed white;
-  margin-right: 12px;
-}
-
-.wd-tuit-stats a {
-  color: rgb(47, 51, 54);
-  text-decoration: none;
-}
-
-.wd-liked-icon {
-  color: red;
-}

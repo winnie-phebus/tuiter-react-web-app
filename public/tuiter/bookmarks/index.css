@@ -46,3 +46,23 @@
   height: 264px;
   border-radius: 25px;
 }
+
+.wd-tuit-stats {
+  color: rgb(47, 51, 54);
+  font-size: 15px;
+}
+
+.wd-icon {
+  color: rgb(47, 51, 54);
+  border: 1px dashed white;
+  margin-right: 12px;
+}
+
+.wd-liked-icon {
+  color: red;
+}
+
+.wd-tuit-stats > a {
+  color: rgb(47, 51, 54);
+  text-decoration: none;
+}

@@ -1,16 +1,10 @@
 .wd-border {
   border-color: rgb(47, 51, 54);
-  /* border: 2px dashed rgb(47, 51, 54); */
-}
-
-.wd-explore-search {
-  /* border: 3px;
-  padding: 5px; */
 }
 
 .wd-explore-searchbar {
   color: white;
-  background-color: darkslategray;
+  background-color: rgb(47, 51, 54);
   margin-right: 12px;
   border-radius: 45px;
   border-color: transparent;
