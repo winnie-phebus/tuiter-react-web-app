@@ -1,111 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet"  type="text/css" href="index.css"/>
-    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous" />
+    <link href="index.css" rel="stylesheet" />
+    <link
+    href="../../vendors/fontawesome-free-5.15.4-web/css/all.css"
+    rel="stylesheet" />
+
 </head>
 
 <body>
-    <!-- At the top there's an input field with rounded corners and a placeholder that reads "Search Tuiter".
-     The color of the text is white and the background color is dark gray. 
-     12px from the right border there's a link in the form of a gear that references "explore-settings.html" -->
-    <div class="wd-container wd-center-items wd-explore-search wd-border">
-        <input placeholder="Search Tuiter" class="wd-explore-searchbar"></input>
-        <a href="explore-settings.html" hint="explore-settings.html" class="wd-gear wd-contrast-color">
-            <span class="wd-gear wd-contrast">&#9881;</span>
-        </a>
-    </div>
+    <div class="row mx-auto">
+        <!-- LEFT SIDE BAR -->
+        <div class="col-12 col-sm-2 col-lg-1 col-xl-2 col-xxl-2">
 
-    <!-- Below the search input field there are a set of hyperlinks labeled "For you", "Trending", etc. 
-    The first link is highlighted with RGB color 29,161,242. 
-    The border below the highlighted link is the same color. 
-    All other links are color 110, 118, 125. 
-    The link fonts are 15px and padded all around by 16px. -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fab fa-twitter"></i>
+                </a>
 
-    <div class="wd-explore-container wd-container wd-center-items wd-border">
-        <a class="wd-explore-navitem wd-contrast-underline wd-contrast-color">For you</a>
-        <a class="wd-explore-navitem">Trending</a>
-        <a class="wd-explore-navitem">COVID-19</a>
-        <a class="wd-explore-navitem">News</a>
-        <a class="wd-explore-navitem">Sports</a>
-        <a class="wd-explore-navitem">Entertainment</a>
-    </div>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-home"></i>
+                        <span class="d-none d-xl-block">Home</span>
+                    </div>
+                </a>
 
-    <!-- Below the links there are suggested posts. 
-    The suggested posts have the topic, title and number of tuits. 
-    The topic, "Trending in Science", "Sports Tranding", "Trending in United States", have 13px font and color 110, 118, 125 -->
-    <div class="wd-container">
-        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
-            <p>
-                <span class="wd-tuit-topic">Pop Culture, Trending</span>
-                <span class="wd-tuit-title">Nicki Minaj</span>
-                <span class="wd-tuit-count">500.7M Tuits</span>
-            </p>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-hashtag"></i>
+                        <span class="d-none d-xl-block">Explore</span>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-bell"></i>
+                        <span class="d-none d-xl-block">Notifications</span>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-envelope"></i>
+                        <span class="d-none d-xl-block">Messages</span>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-bookmark"></i>
+                        <span class="d-none d-xl-block">Bookmarks</span>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-list"></i>
+                        <span class="d-none d-xl-block">Lists</span>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-user"></i>
+                        <span class="d-none d-xl-block">Profile</span>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="hstack gap-2">
+                        <i class="fa fa-bars"></i>
+                        <span class="d-none d-xl-block">More</span>
+                    </div>
+                </a>
+
+
+            </div>
+
+            <button class="btn btn-primary rounded-pill mx-auto col-12">
+                Tweet
+            </button>
+
         </div>
-        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
-            <p>
-                <span class="wd-tuit-topic"> Trending in Science </span>
-                <span class="wd-tuit-title">Starships</span>
-                <span class="wd-tuit-count">67.6k Tuits</span>
-            </p>
-        </div>
-    </div>
 
-    <!-- Some suggested posts additionally have the name of the author of the post, "The New York Times" in white and an image with rounded
-    corners all the way to the right. 
-    The image is 100px wide and high. The image is 16px from the right border.-->
+        <!-- MIDDLE CONTENT -->
+        <div class="col-12 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
 
-    <div class="wd-container">
-        <div class="wd-explore-tuit wd-space-items">
-            <p>
-                <span class="wd-tuit-topic"><span class="wd-tuit-author">The New York Times </span> * 4 hours ago
+            <!-- SEARCH BAR -->
+            <div class="searchbar hstack gap-4">
+                <span class="searchbar-append">
+                    <i class="fas fa-search"></i>
                 </span>
-                <span class="wd-tuit-title">Sun Rises in The Eternal West</span>
-            </p>
-            <img
-                src="https://images.pexels.com/photos/13660162/pexels-photo-13660162.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                <input type="text" class="form-control rounded-pill border-start-0 border" id="input1" placeholder="Search">
+                <i class="fa fa-cog fa-2x text-primary bg-body-tertiary border"></i>
+            </div>
+
+            <!-- TABS -->
+            <div>
+
+                <ul class="nav nav-tabs mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- TUITS -->
+            <div>
+                <!-- Big image -->
+                <div>
+                    <img width="100%" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg">
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+
+                        <div class="hstack gap-4">
+                            <div>
+                                Web Development </br>
+                                <b>ReactJS</b> <i class="fa fa-check-circle" aria-hidden="true"></i> - 2h </br>
+                                React is a component based front end library that makes it easy to build Single Page
+                                Applicaitons or SPAs.
+                            </div>
+
+
+                            <img class="bg-body-tertiary border ms-auto rounded"
+                                src="https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"
+                                height="64px" width="64px">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+
+                        <div class="hstack gap-4">
+                            <div>
+
+                                <b>JavaScript</b> <i class="fa fa-check-circle" aria-hidden="true"></i> - 2h </br>
+                                JavaScript is a language that can run on browsers as well as desktops. </br>
+
+                                123K Tuits
+                            </div>
+
+
+                            <img class="bg-body-tertiary border ms-auto rounded"
+                                src="https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo.png"
+                                height="64px" width="64px">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+
+                        <div class="hstack gap-4">
+                            <div>
+                                Web Development </br>
+
+                                <b>JQuery</b> </br>
+
+                                123K Tuits
+                            </div>
+
+
+                            <img class="bg-body-tertiary border ms-auto rounded"
+                                src="https://pluspng.com/img-png/jquery-logo-png-jquery-logo-png-transparent-background-png-img-transparent-860x868.png"
+                                height="64px" width="64px">
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+
+                        <div class="hstack gap-4">
+                            <div>
+                                Web Development </br>
+
+                                <b>NodeJS</b> <i class="fa fa-check-circle" aria-hidden="true"></i></br>
+
+                                123K Tuits
+                            </div>
+
+
+                            <img class="bg-body-tertiary border ms-auto rounded"
+                                src="https://1.bp.blogspot.com/-sqAjIvOtpXI/XYoCmqOyMwI/AAAAAAAAJig/CowR8wgEauEs-RXN2IPmLYkC7NHoHuA3gCLcBGAsYHQ/s1600/node-js-logo.png"
+                                height="64px" width="64px">
+                        </div>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+
+
         </div>
-        <div class="wd-explore-tuit wd-space-items">
-            <p>
-                <span class="wd-tuit-topic"><span class="wd-tuit-author">The New York Times </span> * 12 hours ago
-                </span>
-                <span class="wd-tuit-title">The Great Goodbye to Good Health</span>
-            </p>
-            <img
-                src="https://images.pexels.com/photos/5420973/pexels-photo-5420973.jpeg?auto=compress&cs=tinysrgb&w=600" />
+
+        <!-- RIGHT SIDE BAR -->
+        <div class="col-12 d-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
+            <ul class="list-group">
+                <li class="list-group-item"><b>Who to follow</b></li>
+                <li class="list-group-item">
+                    <div class="hstack gap-4">
+                        <img class="rounded-circle"
+                            src="https://www.pngitem.com/pimgs/m/174-1746846_java-logo-hd-png-download.png"
+                            height="32px">
+                        <div>
+                            Java <i class="fa fa-check-circle" aria-hidden="true"></i> </br>
+                            @Java
+                        </div>
+
+                        <button class="btn btn-primary rounded-pill bg-body-tertiary border ms-auto">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="hstack gap-4">
+                        <img class="rounded-circle"
+                            src="https://3dprint.com/wp-content/uploads/2019/05/Relativity-logo.png" height="32px">
+                        <div>
+                            Relativety Space <i class="fa fa-check-circle" aria-hidden="true"></i> </br>
+                            @relativetyspace
+                        </div>
+
+                        <button class="btn btn-primary rounded-pill bg-body-tertiary border ms-auto">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="hstack gap-4">
+                        <img class="rounded-circle"
+                            src="https://tse3.mm.bing.net/th?id=OIP.wVJpC6gvhfbRl4V5RNuFLgHaHa&pid=Api" height="32px">
+                        <div>
+                            Virgin Galactic <i class="fa fa-check-circle" aria-hidden="true"></i> </br>
+                            @virgingalactic
+                        </div>
+
+                        <button class="btn btn-primary rounded-pill bg-body-tertiary border ms-auto">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="hstack gap-4">
+                        <img class="rounded-circle" src="http://blogs.agu.org/magmacumlaude/files/2011/01/nasa-logo.jpg"
+                            height="32px">
+                        <div>
+                            NASA <i class="fa fa-check-circle" aria-hidden="true"></i> </br>
+                            @nasa
+                        </div>
+
+                        <button class="btn btn-primary rounded-pill bg-body-tertiary border ms-auto">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="hstack gap-4">
+                        <img class="rounded-circle"
+                            src="https://external-preview.redd.it/1hECaRwLWJOGUaHpGy6j2ZTKJc10LgwGs9zJzlSsVDI.jpg?auto=webp&s=2763448534718ec373247270550baf85a937bb24"
+                            height="32px">
+                        <div>
+                            Tesla <i class="fa fa-check-circle" aria-hidden="true"></i> </br>
+                            @tesla
+                        </div>
+
+                        <button class="btn btn-primary rounded-pill bg-body-tertiary border ms-auto">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
         </div>
-        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
-            <p>
-                <span class="wd-tuit-topic"> Trending in Science </span>
-                <span class="wd-tuit-title">Starships</span>
-                <span class="wd-tuit-count">67.6k Tuits</span>
-            </p>
-            <img
-                src="https://images.pexels.com/photos/5420973/pexels-photo-5420973.jpeg?auto=compress&cs=tinysrgb&w=600" />
-        </div>
+
     </div>
 
-    <div class="wd-container">
-        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
-            <p>
-                <span class="wd-tuit-topic">News * Live</span>
-                <span class="wd-tuit-title">The Congressional Debate</span>
-            </p>
-            <img
-                src="https://images.pexels.com/photos/4386157/pexels-photo-4386157.jpeg?auto=compress&cs=tinysrgb&w=600" />
-        </div>
 
-        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
-            <p>
-                <span class="wd-tuit-topic">Sports * Live</span>
-                <span class="wd-tuit-title">All There is To Know About the Super Bowl</span>
-            </p>
-            <img
-                src="https://images.pexels.com/photos/159616/american-football-football-football-player-running-159616.jpeg?auto=compress&cs=tinysrgb&w=600" />
-        </div>
-    </div>
-    <!-- Some suggested posts don't have the name of the author of the post. 
-    Instead they have the topic of the post, e.g., "COVID-19" in light gray and an image with rounded corners all the way to the right.
-     The image is 100px wide and high. The image is 16px from the right border. -->
 </body>
+
 </html>
