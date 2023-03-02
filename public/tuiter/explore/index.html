@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+</head>
+
+<body>
+    <!-- At the top there's an input field with rounded corners and a placeholder that reads "Search Tuiter".
+     The color of the text is white and the background color is dark gray. 
+     12px from the right border there's a link in the form of a gear that references "explore-settings.html" -->
+    <div class="wd-container wd-center-items wd-explore-search wd-border">
+        <input placeholder="Search Tuiter" class="wd-explore-searchbar"></input>
+        <a href="explore-settings.html" hint="explore-settings.html" class="wd-gear wd-contrast-color">
+            <span class="wd-gear wd-contrast">&#9881;</span>
+        </a>
+    </div>
+
+    <!-- Below the search input field there are a set of hyperlinks labeled "For you", "Trending", etc. 
+    The first link is highlighted with RGB color 29,161,242. 
+    The border below the highlighted link is the same color. 
+    All other links are color 110, 118, 125. 
+    The link fonts are 15px and padded all around by 16px. -->
+
+    <div class="wd-explore-container wd-container wd-center-items wd-border">
+        <a class="wd-explore-navitem wd-contrast-underline wd-contrast-color">For you</a>
+        <a class="wd-explore-navitem">Trending</a>
+        <a class="wd-explore-navitem">COVID-19</a>
+        <a class="wd-explore-navitem">News</a>
+        <a class="wd-explore-navitem">Sports</a>
+        <a class="wd-explore-navitem">Entertainment</a>
+    </div>
+
+    <!-- Below the links there are suggested posts. 
+    The suggested posts have the topic, title and number of tuits. 
+    The topic, "Trending in Science", "Sports Tranding", "Trending in United States", have 13px font and color 110, 118, 125 -->
+    <div class="wd-container">
+        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
+            <p>
+                <span class="wd-tuit-topic">Pop Culture, Trending</span>
+                <span class="wd-tuit-title">Nicki Minaj</span>
+                <span class="wd-tuit-count">500.7M Tuits</span>
+            </p>
+        </div>
+        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
+            <p>
+                <span class="wd-tuit-topic"> Trending in Science </span>
+                <span class="wd-tuit-title">Starships</span>
+                <span class="wd-tuit-count">67.6k Tuits</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Some suggested posts additionally have the name of the author of the post, "The New York Times" in white and an image with rounded
+    corners all the way to the right. 
+    The image is 100px wide and high. The image is 16px from the right border.-->
+
+    <div class="wd-container">
+        <div class="wd-explore-tuit wd-space-items">
+            <p>
+                <span class="wd-tuit-topic"><span class="wd-tuit-author">The New York Times </span> * 4 hours ago
+                </span>
+                <span class="wd-tuit-title">Sun Rises in The Eternal West</span>
+            </p>
+            <img
+                src="https://images.pexels.com/photos/13660162/pexels-photo-13660162.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        </div>
+        <div class="wd-explore-tuit wd-space-items">
+            <p>
+                <span class="wd-tuit-topic"><span class="wd-tuit-author">The New York Times </span> * 12 hours ago
+                </span>
+                <span class="wd-tuit-title">The Great Goodbye to Good Health</span>
+            </p>
+            <img
+                src="https://images.pexels.com/photos/5420973/pexels-photo-5420973.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        </div>
+        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
+            <p>
+                <span class="wd-tuit-topic"> Trending in Science </span>
+                <span class="wd-tuit-title">Starships</span>
+                <span class="wd-tuit-count">67.6k Tuits</span>
+            </p>
+            <img
+                src="https://images.pexels.com/photos/5420973/pexels-photo-5420973.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        </div>
+    </div>
+
+    <div class="wd-container">
+        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
+            <p>
+                <span class="wd-tuit-topic">News * Live</span>
+                <span class="wd-tuit-title">The Congressional Debate</span>
+            </p>
+            <img
+                src="https://images.pexels.com/photos/4386157/pexels-photo-4386157.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        </div>
+
+        <div class="wd-explore-tuit wd-border wd-center-items wd-space-items">
+            <p>
+                <span class="wd-tuit-topic">Sports * Live</span>
+                <span class="wd-tuit-title">All There is To Know About the Super Bowl</span>
+            </p>
+            <img
+                src="https://images.pexels.com/photos/159616/american-football-football-football-player-running-159616.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        </div>
+    </div>
+    <!-- Some suggested posts don't have the name of the author of the post. 
+    Instead they have the topic of the post, e.g., "COVID-19" in light gray and an image with rounded corners all the way to the right.
+     The image is 100px wide and high. The image is 16px from the right border. -->
+</body>
+</html>
