@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 const WhoToFollowListItem = ({
   who = { userName: "NASA", handle: "NASA", avatarIcon: "nasa.png" },
